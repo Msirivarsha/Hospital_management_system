@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Patient Dashboard</title>
+</head>
+<body>
+    <h2>Welcome, <span th:text="${patient.name}">Patient Name</span></h2>
+    <p><strong>Patient ID:</strong> <span th:text="${patient.patientid}"></span></p>
+    <p><strong>Contact Number:</strong> <span th:text="${patient.contactNumber}"></span></p>
+
+    <a th:href="@{/patient/profile}">View Profile</a> | 
+    <a th:href="@{/logout}">Logout</a>
+</body>
+</html>
